@@ -1,0 +1,157 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+.wrapper{
+    width: 400px;
+    height: 400px;
+    position: relative;
+    margin:75px 30px 150px;
+    border-top: 1px solid #6a6a6a;
+    border-bottom: 1px solid #6a6a6a;
+    color: white;
+    cursor: pointer;
+}
+.here{
+    width: 100%;
+    margin: 0;
+    background-color: #808080;
+    position: absolute;
+    top: 170px;
+    right: 170px;
+    text-align: center;
+    transform: rotate(90deg);
+    font-weight: 700;
+}
+li:hover{
+    color:yellow;
+}
+.menu{
+    display: none;
+}
+.header:hover .here {
+    display:none;
+}
+.header:hover .menu {
+    display:block;
+    width: 50%;
+    height: 100%;
+}
+.menu ul {
+    background-color: #808080;
+    width: 200px;
+    height: 400px;
+    margin-top: 0;
+
+}
+.menu ul li{
+    top: 50px;
+    left: 30px;
+}
+.menu{
+    right: 100px;
+}
+ul:not([class]) {
+    list-style: none;
+    padding-left: 20px;
+}
+ul:not([class]) li {
+    position: relative;
+    padding-left: 15px;
+    margin-bottom: 15px;
+}
+
+ul:not([class]) li:before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    background-color: #ff9016;
+    position: absolute;
+    border: 1px solid black;
+    left: 0;
+    top: 0.2em;
+    transform: rotate(45deg);
+   
+}
+
+.blocks{
+    position: relative;
+    margin: 50px 0 0 15px;
+    width: 300px;
+    min-height: 300px;
+}
+.blocks div{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+}
+.pink{
+background-color: pink;
+
+}
+.blue{
+    background-color: blue;
+    z-index: 1;
+    top: 50px;
+    right: 150px;
+}
+.green{
+    background-color: green;
+    top: 100px;
+    left: 100px;
+}
+.card_wrp{
+    position: absolute;
+    width: 600px;
+    height: 700px;
+    background-color: #0d5825;
+    font-size: 25px;
+    left: 30%;
+    text-align: center;
+    color:white;
+    margin-bottom: 100px;
+}
+.text{
+    margin-top: 20px;
+}
+.text q{
+    font-weight: 700;
+}
+.img{
+    position: relative;
+    margin-top: 30px;
+}
+.img img{
+    width: 150px;
+    position: absolute;
+
+}
+.fs{
+    left: 150px;
+    top: 200px;
+    transform: rotate(155deg)
+}
+.sc{
+    left: 207px;
+    top: 208px;
+    transform: rotate(170deg);
+}
+.thr{
+    top: 235px;
+    left: 267px;
+    transform: rotate(192deg);
+}
+.fs:hover{
+    top:180px;
+    transition: 0.5s ease;
+}
+.sc:hover{
+    top:185px;
+    transition: 0.5s ease;
+}
+.thr:hover{
+    top:205px;
+    transition: 0.5s ease;
+}
